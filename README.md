@@ -2,10 +2,6 @@
 
 ![Home Image](https://github.com//madainnovation/Jumla-Sign-Language-Annotation-Tool-By-Mada-Center/blob/main/public/jumla%20annotation%20tool.PNG?raw=true)
 
-### if you’re writing or working about this tool, please cite this paper:
-
-Achraf Othman, Oussama El Ghoul, “Syntactic and semantic annotation tool for Qatari Sign Language Corpus”, 8th International Conference on Information and Communication Technology and Accessibility ICTA’21, December 8-10, 2021 [online].
-
 ## Installation
 Below all required instruction to setup a server in order to run the Jumla Sign Language Annotation Tool.
 ## Packages
@@ -34,7 +30,7 @@ This command is used to install the apache2 web server.
 sudo systemctl status apache2
 ```
 This command is used to view the status of a service.
-#### after see â€œActive: activeâ€ press
+#### after see "Active: active" press
 ```bash
 q
 ```
@@ -48,7 +44,7 @@ mod_rewrite operates on the full URL path, including the path-info section. A re
 ```bash
 sudo a2enmod rewrite
 ```
-Here we need to activate mod_rewrite using the above command. Itâ€™s available but not enabled with a clean Apache 2 installation, this command will activate the module or alert you that the module is already enabled. To put these changes into effect, restart Apache.
+Here we need to activate mod_rewrite using the above command. It's available but not enabled with a clean Apache 2 installation, this command will activate the module or alert you that the module is already enabled. To put these changes into effect, restart Apache.
 #### restrat apache:
 ```bash
 sudo systemctl restart apache2
@@ -58,7 +54,7 @@ sudo systemctl restart apache2
 ###### Step 2 - Enter the URL http://YOUR-IP/
 ###### Step 3 - You will see the Apache Home Page
 ### Step 4 - Install MySQL
-MySQL is a powerful database management system used for organizing and retrieving data. Itâ€™s more friendly with PHP Language.
+MySQL is a powerful database management system used for organizing and retrieving data. It's more friendly with PHP Language.
 ```bash
 sudo apt install mysql-server
 ```
@@ -163,7 +159,7 @@ When we create a repository on GitHub, it exists as a remote repository. We can 
 #### Config:
 ```bash
 git config --global user.name "YOUR-NAME" 
-git config --global user.email "YOUR-EMAILâ€
+git config --global user.email "YOUR-EMAIL"
 ```
 #### clone repository to html folder
 ```bash
@@ -202,7 +198,7 @@ php artisan key:generate
 php artisan config:cache
 ```
 ### Step 9 - Set Up Apache Virtual Hosts
-Each domain or individual sites known as â€œVirtual Hostsâ€.
+Each domain or individual sites known as "Virtual Hosts".
 ####  Delete the default Apache2 index page:
 ```bash
 rm /var/www/html/index.html                          
@@ -255,3 +251,8 @@ Update the key stored in the application's environment file.
 php artisan config:cache
 php artisan migrate --seed
 ```
+
+### if you’re writing or working about this tool, please cite this paper:
+
+Achraf Othman, Oussama El Ghoul, “Syntactic and semantic annotation tool for Qatari Sign Language Corpus”, 8th International Conference on Information and Communication Technology and Accessibility ICTA’21, December 8-10, 2021 [online].
+
